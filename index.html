@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header ul {
+            width: 100vw;
+            height: 10vh;
+            display: flex;
+            /* justify-content: space-around; */
+            align-items: center;
+            background-color: rgb(194, 229, 229);
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        header li {
+            list-style: none;
+            padding-left: 22px;
+        }
+
+        header li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: rgb(60, 122, 216);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .uniquifier {
+            font-family: "Edu AU VIC WA NT Guides", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        form input {
+            display: flex;
+            flex-direction: column;
+        }
+
+        text {
+            display: block;
+            height: 100px;
+            width: 150px;
+            border: 1px solid black;
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            margin: 20px;
+        }
+
+        table {
+            height: 150px;
+            width: 150px;
+            font-size: larger;
+        }
+
+        table td {
+            background-color: #dddddd;
+            text-align: center;
+        }
+
+        .cont {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .lorem {
+            text-align: center;
+            text-transform: capitalize;
+            padding: 50px;
+        }
+
+        .lorem p {
+            line-height: 19px;
+        }
+
+        footer {
+            color: rgb(95, 162, 162);
+            text-align: center;
+        }
+
+        .map-fig {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+
+        .font-pro {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 600;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .gradiean {
+            height: 50px;
+            width: 100%;
+            background-image: linear-gradient(to top right, rgb(244, 244, 0, 0.5), rgb(150, 255, 0));
+        }
+
+        .img-dv {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="about.html">About me</a></li>
+        </ul>
+    </header>
+    <main class="lorem">
+
+        <div class="cont">
+            <section>
+                <h3>section</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eius eos ut quis quibusdam dolore
+                    ducimus sequi voluptates ab delectus voluptate deleniti laborum nihil possimus quasi id, quam quidem
+                    numquam.</p>
+            </section>
+            <article>
+                <h3>article</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus facilis voluptatem distinctio.
+                    Reprehenderit labore praesentium tenetur odit mollitia. Alias architecto quam ex facilis
+                    consequuntur aut similique hic? Aut, neque veniam.</p>
+            </article>
+            <aside>
+                <h3>aside</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a provident facere suscipit eligendi
+                    accusamus blanditiis esse aliquam rem. Totam eaque id officia libero culpa reiciendis quod vitae
+                    nostrum qui?</p>
+            </aside>
+        </div>
+        <hr>
+        <mark>example of mark tag</mark>
+        <div class="img-dv">
+            <figure>
+
+                <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D"
+                    height="300px" width="300px" alt="blub-img">
+                <figcaption>Chasing light and capturing its brilliance.</figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <!-- Headings (<h1> to <h6>) -->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+
+    <!-- Paragraphs (<p>) -->
+    <p>Paragraph tag </p>
+
+    <!-- Line breaks (<br>) -->
+    <br />
+
+    <!-- Horizontal lines (<hr>) -->
+    <hr />
+
+    <!-- Using inline styles -->
+    <p style="color: brown;">this tag display with inline style</p>
+
+    <!-- •	Data attributes (data-*) -->
+    <ul>
+        <li data-sort="103">computer</li>
+        <li data-sort="102">laptop</li>
+    </ul>
+
+    <!-- •	Creating forms -->
+    <h1 style="text-decoration: underline;">Form </h1>
+    <form action="#" method="get" target="_self">
+        <fieldset>
+            <label>Name :-</label>
+            <input type="text" placeholder="enter your user name" name="name" required /><br>
+
+            <label>password :-</label>
+            <input type="password" name="password" minlength="6" required /><br>
+
+            <label>email</label><input type="email" placeholder="enter your email" name="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" /><br>
+
+            <label>select your city</label>
+            <select>
+                <option value="kadi">kadi</option>
+                <option value="kalol">kalol</option>
+                <option value="ahmedabad">ahmedabad</option>
+            </select><br><br />
+
+            <label>message :-</label><br>
+            <textarea cols="20" rows="5"> write message here....</textarea>
+
+            <input type="submit" value="submit" />
+        </fieldset>
+    </form>
+    <text>
+        <b> this is bold tag(b) </b><br>
+        <strong> This is strong and important </strong><br>
+        <i>This is italic </i><br>
+        <em>this is emphasis </em><br>
+    </text>
+    <!-- Hyperlinks (<a> tag) -->
+    <a href="https://www.orionik.com/" alt="orionik" target="_blank">orionik_web</a>
+
+    <list>
+        <!-- Ordered lists (<ol>) -->
+        <h3>Ordered list with upper roman</h3>
+        <ol type="I">
+            <li>key</li>
+            <li>remote</li>
+        </ol>
+
+        <!-- unordered lists -->
+        <h3>unordered lists</h3>
+        <ul>
+            <li>apple</li>
+            <li>mango</li>
+        </ul>
+
+        <!-- Description lists (<dl>, <dt>, <dd>) -->
+        <h3>Description lists</h3>
+        <dl>
+            <dt>lorem</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo harum recusandae perferendis quod veniam
+                nulla. Rem repudiandae debitis nemo corporis molestias est obcaecati ad autem dicta. Itaque deserunt
+                magnam
+                cumque.</dd>
+        </dl>
+
+        <!-- nested lists -->
+        <h3>nested list (list inside another list)</h3>
+        <ol type="A">
+            <li>Coffee</li>
+            <li>Tea
+                <ol type="a">
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                </ol>
+            </li>
+            <li>Milk</li>
+        </ol>
+    </list>
+
+    <table border="1">
+        <caption>Table Example</caption>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Dhruvi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Happy</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <img src="https://media.licdn.com/dms/image/v2/D4D0BAQFvFRBU3asXqw/company-logo_100_100/company-logo_100_100/0/1722111216521/orionik_technologies_pvt_ltd_logo?e=2147483647&v=beta&t=5gQORqkghHfQ8W0nzMVTJ1ypRC7ZX8GW0_y8dwpk7ms"
+        alt="orionik-logo" height="200px" width="200px"><br>
+
+    <!-- <video src="https://videos.pexels.com/video-files/26221374/11940171_640_360_30fps.mp4" height="200px" width="200px" controls></video> -->
+
+    <div class="container">
+        <audio controls src="audio.mp3"></audio>
+    </div>
+    <h3>above example show "embed" tag</h3>
+    <embed src="video.mp4" type="video/mp4" height="300px" width="300px">
+
+
+    <br>
+    <h3>PDF with object tag</h3>
+    <object data="file:///C:/Users/dell/Downloads/CSS%20Notes.pdf" type="application/pdf"></object>
+
+
+
+    <canvas style="border: 2px solid black; "></canvas>
+    <P class="font-pro">This is show font properties</P>
+    <p style="letter-spacing: 10px; text-decoration: underline;text-align: center;">letter-spacing</p>
+    <p style="line-height: 20px; " class="uniquifier">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam
+        consequuntur libero sequi totam, rerum excepturi eveniet, facilis neque magni officiis quas aperiam, iste nihil
+        corrupti iusto suscipit doloremque aut!</p>
+    <div class="gradiean"></div>
+    <footer>
+        <hr>
+        <p>2024 all right reserved</p>
+    </footer>
+
+</html>
